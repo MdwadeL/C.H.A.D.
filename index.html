@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.H.A.D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="side-bar">In-depth Settings; Report.</div>
+    <div id="main-container">
+        <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="front">سلام</div>
+                <div class="back">Hello</div>            
+            </div>
+        </div>
+        <canvas id="trackpad"></canvas>
+        <div class="menu-bar">
+            <button class="menu-button" id="back-button">⤎</button>
+            <button class="menu-button" id="clear-button">⌫</button>
+            <button class="menu-button" id="check-button">✓</button>
+            <button class="menu-button" id="next-button">⤏</button>
+        </div>
+        <!--Quick Settings; Language Change. Mute. Quieter. Louder-->
+        <button id="quick-settings-button"></button>
+        <div id="quick-settings">
+            <select id="language-selector" class="quick-settings-buttons">
+                <option value="arabic">Z → س</option>
+                <option value="gujarati">Z → છ</option>
+            </select>
+            <button class="quick-settings-buttons" id="mute">Mute</button>
+            <button class="quick-settings-buttons" id="quieter">Quieter</button>
+            <button class="quick-settings-buttons" id="louder">Louder</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
